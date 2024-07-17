@@ -1,0 +1,49 @@
+{% extends "basic.html" %} {% block title %}Login{% endblock title %}
+
+{% block body %}
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4"></div>
+
+    <div class="col-md-4">
+      <h3 class="text-white text-center">Login</h3>
+
+      {% for message in messages %}
+
+      <div class="alert alert- {{message.tags}} alert-dismissible fade show" role="alert">
+        <strong> {{message}}</strong> 
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>         
+      {% endfor %}
+      <div class="card p-4">
+      <form action="/auth/login/" method="post">{% csrf_token %}  
+        <div class="form-group">
+          <h5>
+            <span><i class="bx bx-envelope"></i> Email</span>
+          </h5>
+          <input type="email" class="form-control mb-3" name="email" required/>
+        </div>
+
+        <div class="form-group">
+          <h5>
+            <span><i class="fas fa-lock"></i> Password</span>
+          </h5>
+          <input type="text" class="form-control mb-3" name="pass1" required/>
+        </div>
+
+        
+
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary" type="submit">login</button>
+        </div>
+<br>
+        New User ? <a href="/auth/signup">Signup</a>
+    </form>
+      </div>
+
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+</div>
+{% endblock body %}

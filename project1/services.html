@@ -1,0 +1,93 @@
+{% extends "basic.html" %}
+
+{% block title %}services{% endblock title %}
+
+
+
+{% block body %}
+{% load static %}
+<!-- ======= Header ======= -->
+<header id="header">
+    <div class="container">
+
+      <h1><a href="index.html">Services</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <h2>Have a look and check <span>  Services </span>      </h2>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#header">Home</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Services</h2>
+        <p>My Services</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-terminal"></i></div>
+            <h4><a href="">WEB-DEVELOPMENT</a></h4>
+            <p>Website and Web-app development with backend data management using DJANGO</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-file"></i></div>
+            <h4><a href="">Data-management</a></h4>
+            <p>To  manage  the back-end data of websites and webapp with backend management</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-play-circle"></i></div>
+            <h4><a href="">VideoEditing</a></h4>
+            <p>Videoediting with color correction and animation as per requirements</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-image"></i></div>
+            <h4><a href="">PhotoShop</a></h4>
+            <p>Image Editing and Retouching with Color Correction and Image Generation</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-balloon"></i></div>
+            <h4><a href="">Designing</a></h4>
+            <p>Graphic  with Layout Design and Illustration with Graphics</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Services Section -->
+  
+{% endblock body %}
